@@ -8,11 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Selam</h1>
+    <h1 id="hi">Selam</h1>
     <h2>Dünya</h2>
     <h3>MCD</h3>
     <p>bu dosya htmlbranch için yazılmıştır</p>
     <p>deneme</p>
-    
+
+    <button onclick="document.getElementById('myImage').src='/images/lamboff.png'">Işığı aç</button>
+
+    <img id="myImage" src="/images/lamboff.png" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='/images/lambon.png'">Işığı kapat</button>
+<br>
+<input type="text" id="el">
+<button type="button" onclick="myFun()">Götür</button>
+<button type="button" onclick="myFun2()">Getir</button>
+    <script>
+function myFun(){
+        document.getElementById("el").style.visibility="hidden";
+        document.getElementById("hi").innerHTML="'Getir' Kısmına Bas"
+    }
+function myFun2(){
+    document.getElementById("el").style.visibility="visible";
+    document.getElementById("hi").style.display="hidden"
+}
+document.getElementById("hi").innerHTML = "Hello JavaScript";
+    </script>
 </body>
 </html>
