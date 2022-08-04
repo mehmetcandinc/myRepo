@@ -23,6 +23,9 @@
 <input type="text" id="el">
 <button type="button" onclick="myFun()">Götür</button>
 <button type="button" onclick="myFun2()">Getir</button>
+<button type="button" onclick="donguDeneme2()">AzTıkla</button>
+<button type="button" onclick="donguDeneme()">ArTıkla</button>
+<h1 id="buton">0</h1>
     <script>
 function myFun(){
         document.getElementById("el").style.visibility="hidden";
@@ -33,6 +36,16 @@ function myFun2(){
     document.getElementById("hi").style.display="hidden"
 }
 document.getElementById("hi").innerHTML = "Hello JavaScript";
+
+function donguDeneme(){
+    var sayi = Number(buton.innerHTML);
+        document.getElementById("buton").innerHTML = ++sayi;
+    
+}
+function donguDeneme2(){
+    var sayi= Number(buton.innerHTML);
+    document.getElementById("buton").innerHTML = --sayi;
+}
     </script>
 </body>
 </html>
